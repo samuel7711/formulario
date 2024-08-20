@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Formulario</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="nombre">Registro</string>
+    <string name="estudiante">Estudiante</string>
+    <string name="documento">Documento</string>
+    <string name="edad">Edad</string>
+    <string name="carrera">Carrera</string>
+    <string name="semestre">Semestre</string>
+    <string name="enviar">Enviar</string>
+    <string name="eliminar">Eliminar</string>
+</resources>
