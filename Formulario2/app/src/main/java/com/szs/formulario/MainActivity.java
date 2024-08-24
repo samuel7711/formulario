@@ -69,12 +69,6 @@ public class MainActivity extends AppCompatActivity {
                 document = String.valueOf(editDocumento.getText());
                 age = String.valueOf(editEdad.getText());
                 matricul = String.valueOf(editMatricula.getText());
-            }
-        });
-
-        alert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
                 AlertDialog.Builder alerta =new AlertDialog.Builder(MainActivity.this);
                 alerta.setTitle("infromacion guardada");
@@ -85,6 +79,22 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
                 alerta.show();
+            }
+        });
+
+        alert.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                AlertDialog.Builder alert =new AlertDialog.Builder(MainActivity.this);
+                alert.setTitle("infromacion guardada");
+                alert.setMessage("Nombre: "+name+" documento: "+document+" Matricula "+ matricul);
+                alert.setPositiveButton("ok", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                    }
+                });
+                alert.show();
             }
         });
 

@@ -43,6 +43,8 @@
             android:layout_margin="20dp"
             android:text="@string/entrar"
             android:textStyle="italic"
+            android:backgroundTint="@color/naranja"
+            android:textColor="@color/black"
             >
 
         </Button>

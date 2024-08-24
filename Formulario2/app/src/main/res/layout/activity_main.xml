@@ -17,12 +17,13 @@
         <TextView
             android:id="@+id/registro"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/nombre"
             android:textSize="50dp"
             android:gravity="center"
             android:textColor="@color/black"
-            android:textStyle="italic">
+            android:textStyle="italic"
+            >
 
         </TextView>
 
@@ -55,7 +56,8 @@
             android:layout_height="40dp"
             android:layout_marginBottom="20dp"
             android:layout_marginTop="20dp"
-            android:text="ingresar nombre">
+            android:text="ingresar nombre"
+            >
 
         </EditText>
 
@@ -143,6 +145,8 @@
             android:text="@string/eliminar"
             android:layout_margin="10dp"
             android:textStyle="italic"
+            android:backgroundTint="@color/naranja"
+            android:textColor="@color/black"
             >
 
         </Button>
@@ -153,7 +157,9 @@
             android:layout_height="wrap_content"
             android:text="@string/enviar"
             android:layout_margin="10dp"
-            android:textStyle="italic">
+            android:textStyle="italic"
+            android:backgroundTint="@color/naranja"
+            android:textColor="@color/black">
         </Button>
 
     </LinearLayout>
