@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editNombre,editDocumento,editEdad,editMatricula;
     TextView nombre, documento,edad,matricula;
     String name,age,document,matricul,TAG="test";
-    
+
 
 
     @Override
@@ -44,15 +44,15 @@ public class MainActivity extends AppCompatActivity {
             matricula = findViewById(R.id.matricula);
 
 
-
+  
 
 
     }
 
+
     @Override
     protected void onStart() {
         super.onStart();
-        contstar = contstar + 1 ;
 
         botonCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -99,6 +99,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
 
     @Override
     protected void onStop() {
