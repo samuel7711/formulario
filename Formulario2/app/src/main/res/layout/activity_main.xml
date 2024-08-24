@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:background=""
+        android:background="@color/celeste"
         >
 
         <TextView
@@ -21,7 +21,8 @@
             android:text="@string/nombre"
             android:textSize="50dp"
             android:gravity="center"
-            android:textColor="@color/black">
+            android:textColor="@color/black"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -32,7 +33,7 @@
         android:layout_height="0dp"
         android:layout_weight="5"
         android:orientation="vertical"
-        android:background="">
+        android:background="c">
 
 
         <TextView
@@ -41,8 +42,10 @@
             android:layout_height="wrap_content"
             android:text="@string/name"
             android:textSize="25dp"
-            android:gravity="left"
-            android:textColor="@color/black">
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:layout_marginTop="25dp"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -50,7 +53,9 @@
             android:id="@+id/editNombre"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ingresar nombre">
 
         </EditText>
 
@@ -60,8 +65,9 @@
             android:layout_height="wrap_content"
             android:text="@string/documento"
             android:textSize="25dp"
-            android:gravity="left"
-            android:textColor="@color/black">
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -69,7 +75,9 @@
             android:id="@+id/editDocumento"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ingresar documento">
 
         </EditText>
 
@@ -79,8 +87,9 @@
             android:layout_height="wrap_content"
             android:text="@string/edad"
             android:textSize="25dp"
-            android:gravity="left"
-            android:textColor="@color/black">
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -88,7 +97,9 @@
             android:id="@+id/editEdad"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ingresar edad">
 
         </EditText>
 
@@ -98,8 +109,9 @@
             android:layout_height="wrap_content"
             android:text="@string/matricula"
             android:textSize="25dp"
-            android:gravity="left"
-            android:textColor="@color/black">
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="italic">
 
         </TextView>
 
@@ -107,7 +119,9 @@
             android:id="@+id/editMatricula"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:layout_marginBottom="20dp">
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="ingresar matricula">
 
         </EditText>
 
@@ -119,7 +133,8 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:orientation="horizontal"
-        android:gravity="center">
+        android:gravity="center"
+        android:background="@color/celeste">
 
         <Button
             android:id="@+id/botonCancelar"
@@ -127,6 +142,7 @@
             android:layout_height="wrap_content"
             android:text="@string/eliminar"
             android:layout_margin="10dp"
+            android:textStyle="italic"
             >
 
         </Button>
@@ -136,7 +152,8 @@
             android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/enviar"
-            android:layout_margin="10dp">
+            android:layout_margin="10dp"
+            android:textStyle="italic">
         </Button>
 
     </LinearLayout>

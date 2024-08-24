@@ -3,6 +3,7 @@ package com.szs.formulario;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -23,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
     Button botonCancelar,botonoEnviar,alert;
     EditText editNombre,editDocumento,editEdad,editMatricula;
     TextView nombre, documento,edad,matricula;
-    String name,age,document,matricul;
+    String name,age,document,matricul,TAG="test";
+    int contresume=0,contstop=0,contstar=0,contpause=0,contcreate=0,contdestroy=0;
 
 
     @Override
@@ -40,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
             documento = findViewById(R.id.documento);
             edad = findViewById(R.id.edad);
             matricula = findViewById(R.id.matricula);
+
+
+
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        contstar = contstar + 1 ;
 
         botonCancelar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,11 +91,27 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG,"Estoy en el onStop");
+    }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG,"Estoy en el onPause");
+    }
 
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d(TAG,"Estoy en el onResume");
+    }
 
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG,"Estoy en el onDestroy");
     }
 
 
