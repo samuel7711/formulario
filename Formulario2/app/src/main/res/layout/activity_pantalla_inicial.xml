@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pantallaInicial"
+    android:background="@color/celeste">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/carwash"
+        >
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/carwash"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/carwash"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textStyle="italic"
+        >
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp">
+
+        <Button
+            android:id="@+id/botonEntrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="30dp"
+            android:text="@string/entrar"
+            android:textStyle="italic"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
