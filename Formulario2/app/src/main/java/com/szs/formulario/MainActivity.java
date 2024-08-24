@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     EditText editNombre,editDocumento,editEdad,editMatricula;
     TextView nombre, documento,edad,matricula;
     String name,age,document,matricul,TAG="test";
-    int contresume=0,contstop=0,contstar=0,contpause=0,contcreate=0,contdestroy=0;
+    
 
 
     @Override
