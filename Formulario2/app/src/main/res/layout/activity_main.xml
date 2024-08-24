@@ -11,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background=""
         >
 
         <TextView
@@ -18,7 +19,8 @@
             android:layout_height="wrap_content"
             android:text="@string/nombre"
             android:textSize="50dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:textColor="@color/black">
 
         </TextView>
 
@@ -28,18 +30,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="5"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="">
+
 
         <TextView
+            android:id="@+id/estudiante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/estudiante"
             android:textSize="25dp"
-            android:gravity="left">
+            android:gravity="left"
+            android:textColor="@color/black">
 
         </TextView>
 
         <EditText
+            android:id="@+id/editestudiante"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp">
@@ -47,15 +54,18 @@
         </EditText>
 
         <TextView
+            android:id="@+id/documento"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/documento"
             android:textSize="25dp"
-            android:gravity="left">
+            android:gravity="left"
+            android:textColor="@color/black">
 
         </TextView>
 
         <EditText
+            android:id="@+id/editdocumento"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp">
@@ -63,15 +73,18 @@
         </EditText>
 
         <TextView
+            android:id="@+id/edad"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/edad"
             android:textSize="25dp"
-            android:gravity="left">
+            android:gravity="left"
+            android:textColor="@color/black">
 
         </TextView>
 
         <EditText
+            android:id="@+id/editedad"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp">
@@ -79,15 +92,18 @@
         </EditText>
 
         <TextView
+            android:id="@+id/carrera"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/carrera"
             android:textSize="25dp"
-            android:gravity="left">
+            android:gravity="left"
+            android:textColor="@color/black">
 
         </TextView>
 
         <EditText
+            android:id="@+id/editcarrera"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp">
@@ -95,15 +111,18 @@
         </EditText>
 
         <TextView
+            android:id="@+id/semestre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/semestre"
             android:textSize="25dp"
-            android:gravity="left">
+            android:gravity="left"
+            android:textColor="@color/black">
 
         </TextView>
 
         <EditText
+            android:id="@+id/editsemestre"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginBottom="20dp">
@@ -116,20 +135,23 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:gravity="center">
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:text="@string/eliminar"
+            android:layout_margin="10dp"
             >
 
         </Button>
 
         <Button
-            android:layout_width="wrap_content"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="@string/enviar">
+            android:text="@string/enviar"
+            android:layout_margin="10dp">
         </Button>
 
     </LinearLayout>
